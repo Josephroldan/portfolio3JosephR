@@ -5,13 +5,17 @@
  */
 
 $("document").ready(function() {
-    $(".wimp").css("background-color", "yellow");
-    
-    $('p:first').css("background-color","olive");
+    $(".wimp").css("background-color", "green");
+    $('#tremble').bind('click', keyIsClicked)
+    $('p:first').css("background-color", "olive");
 });
-$("document").ready(function(){
-   $(".container").css("border","0");
-   $(".row").css("border","0");
-   $(".col-xs-2").css("border","0");
-    $(".col-xs-10").css("border","0");
+$("document").ready(function() {
+    $(".container").css("border", "0");
+    $(".row").css("border", "0");
+    $(".col-xs-2").css("border", "0");
+    $(".col-xs-10").css("border", "0");
 });
+
+function keyIsClicked() {
+alert('a button was pressed')
+}
