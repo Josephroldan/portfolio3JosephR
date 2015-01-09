@@ -6,8 +6,9 @@
 
 $("document").ready(function() {
     $(".wimp").css("background-color", "green");
-    $('#tremble').bind('click', keyIsClicked)
+    $('#tremble').bind('click', keyIsClicked);
     $('p:first').css("background-color", "olive");
+    $('#hi').bind('click', change);
 });
 $("document").ready(function() {
     $(".container").css("border", "0");
@@ -17,5 +18,8 @@ $("document").ready(function() {
 });
 
 function keyIsClicked() {
-alert('a button was pressed')
+alert('your cursor clicked my header *gasp*');
+}
+function change(){
+    $('#hi').html('so you have found my secret sentence impresive ');
 }
