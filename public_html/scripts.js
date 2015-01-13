@@ -6,7 +6,7 @@
 
 $("document").ready(function() {
     $(".wimp").css("background-color", "green");
-    $('#button').bind('click',newButton)
+    $('#button').bind('click',newButton);
     $('#tremble').bind('click', keyIsClicked);
     $('#tremble').bind('mouseover', hi).bind('mouseout', bye);
     $('p:first').css("background-color", "olive");
@@ -17,8 +17,8 @@ $("document").ready(function() {
 $("document").ready(function() {
     $(".container").css("border", "0");
     $(".row").css("border", "0");
-    $(".col-xs-2").css("border", "0");
-    $(".col-xs-10").css("border", "0");
+    $(".col-xs-3").css("border", "0");
+    $(".col-xs-9").css("border", "0");
 });
 
 function keyIsClicked() {
@@ -57,5 +57,5 @@ function hideImg() {
     $('#hide').hide('puff', {}, 2500);
 }
 function newButton(){
-    
+  $('#button').append('<p>hi</p>');  
 }
