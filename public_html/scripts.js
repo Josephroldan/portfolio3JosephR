@@ -5,14 +5,15 @@
  */
 
 $("document").ready(function() {
-    $(".wimp").css("background-color", "green");
     $('#button').bind('click',newButton);
     $('#tremble').bind('click', keyIsClicked);
+    //displays message when header is clicked 
     $('#tremble').bind('mouseover', hi).bind('mouseout', bye);
-    $('p:first').css("background-color", "olive");
+    //lets header display secreat message
     $('#hi').bind('click', change);
     $('#p').bind('click', changeTwo).bind('mouseover', color).bind('mouseout', noColor);
-    $('#hide').bind('click', hideImg);
+    $("body").css("background-image", "url(http://24.media.tumblr.com/af38ff89188ad18c10afadf2b2c7824d/tumblr_mzvjht9eay1s2wio8o5_500.gif)");
+    $("body").css("background-image", "cover");
 });
 $("document").ready(function() {
     $(".container").css("border", "0");
@@ -26,6 +27,7 @@ function keyIsClicked() {
 }
 function change() {
     $('#hi').html('so you have found my secret sentence impresive ');
+    $('#hi').bind('click',hideImg);
 }
 function hi() {
     $('#tremble').html('hi there');
@@ -54,7 +56,7 @@ function noColor() {
 }
 //oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 function hideImg() {
-    $('#hide').hide('puff', {}, 2500);
+    $('#hi').hide('puff', {}, 2500);
 }
 function newButton(){
   $('#button').append('<p>hi</p>');  
