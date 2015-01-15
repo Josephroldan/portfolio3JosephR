@@ -21,6 +21,9 @@ $("document").ready(function() {
     $(".col-xs-3").css("border", "0");
     $(".col-xs-9").css("border", "0");
 });
+$("document").ready(function(){
+   $('#nice').accordian({header:"h4"});
+});
 
 function keyIsClicked() {
     alert('your cursor clicked my header *gasp*');
