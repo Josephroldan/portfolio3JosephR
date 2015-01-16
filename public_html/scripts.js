@@ -20,9 +20,10 @@ $("document").ready(function() {
     $(".row").css("border", "0");
     $(".col-xs-3").css("border", "0");
     $(".col-xs-9").css("border", "0");
+    $("body").css("background-image","url(http://www.jail.se/hardware/digital_camera/canon/ixus_800is-powershot_sd700/images/sample_photos/sample1.jpg)")
 });
 $("document").ready(function(){
-   $('#nice').accordian({header:"h4"});
+   $('#nice').accordion({header:"h4"});
 });
 
 function keyIsClicked() {

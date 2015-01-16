@@ -19,27 +19,7 @@ and open the template in the editor.
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
         <link rel="stylesheet" href="/resources/demos/style.css">
-        <style>
-
-            .group { zoom: 1 }
-        </style>
-        <script>
-            $(function() {
-                $("#accordion")
-                        .accordion({
-                            header: "> div > h3"
-                        })
-                        .sortable({
-                            axis: "y",
-                            handle: "h3",
-                            stop: function(event, ui) {
-
-                                ui.item.children("h3").triggerHandler("focusout");
-                                $(this).accordion("refresh");
-                            }
-                        });
-            });
-        </script>
+        
     </head>
     <body>
         <div id="nice">        
@@ -63,6 +43,15 @@ and open the template in the editor.
                         </div>
                         <script type="text/javascript" src="scripts.js"></script>
                     </div>
+        <h4>technology</h4> 
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-xs-2">HTML</div><div class="col-xs-10"></div>
+                </div>
+            </div>
         </div>
-    </body>
+        </div>
+        
+        </body>
 </html>
