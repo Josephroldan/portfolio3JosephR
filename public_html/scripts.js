@@ -14,6 +14,8 @@ $("document").ready(function() {
     $('#p').bind('click', changeTwo).bind('mouseover', color).bind('mouseout', noColor);
     $("body").css("background-image", "url(http://24.media.tumblr.com/af38ff89188ad18c10afadf2b2c7824d/tumblr_mzvjht9eay1s2wio8o5_500.gif)");
     $("body").css("background-image", "cover");
+    $("img:nth-child(1)").css("height", "32px");
+    $("img:nth-child(2)").css("height","32px");
 });
 $("document").ready(function() {
     $(".container").css("border", "0");
